@@ -1,9 +1,6 @@
 package com.korit12.cardatabase.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
@@ -30,4 +27,9 @@ public class Car {
     private int modelYear;
     @NonNull
     private int price;
+
+    @ManyToOne
+    @JoinColumn(name = "owner")
+    @NonNull
+    private Owner owner;            // @NonNull이 없으니까 얘는 옵셔널이라고 봐야겠네요.
 }
