@@ -29,7 +29,7 @@ public class Car {
     private int price;
 
     @ManyToOne
-    @JoinColumn(name = "owner")
+    @JoinColumn(name = "owner")     // 컬럼명을 제가 지었습니다.
     @NonNull
     private Owner owner;            // @NonNull이 없으니까 얘는 옵셔널이라고 봐야겠네요.
 }
