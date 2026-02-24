@@ -33,6 +33,10 @@ dependencies {
 	//롬복
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+	// 스프링세큐어리티
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	testImplementation 'org.springframework.boot:spring-boot-starter-security'
+
 }
 
 tasks.named('test') {
