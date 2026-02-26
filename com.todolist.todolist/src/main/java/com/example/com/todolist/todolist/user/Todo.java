@@ -27,8 +27,8 @@ public class Todo {
     private Boolean isComplete=false;
 
     @NonNull
-    @ManyToOne
-    @JoinColumn(name = "todo")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="user_id")
     @JsonIgnore
     private User user;
 

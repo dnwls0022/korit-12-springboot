@@ -4,6 +4,7 @@ import com.example.com.todolist.todolist.repository.TodoRepository;
 import com.example.com.todolist.todolist.repository.UserRepository;
 import com.example.com.todolist.todolist.user.Todo;
 import com.example.com.todolist.todolist.user.User;
+import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
